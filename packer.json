@@ -42,21 +42,6 @@
         "sudo systemctl enable nginx",
         "curl https://get.docker.com | bash"
         ]
-    },
-    {
-            "type": "file",
-            "source": "docker.service",
-            "destination": "/tmp/docker.service"
-    },
-    {
-        "type": "shell",
-        "inline": [
-            "sudo cp /tmp/docker.service /lib/systemd/system/docker.service",
-            "sudo usermod -a -G docker ubuntu",
-            "sudo systemctl daemon-reload",
-            "sudo service docker restart"
-        ]
-
     }
 ]
   }
