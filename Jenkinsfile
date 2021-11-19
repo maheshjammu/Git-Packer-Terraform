@@ -16,7 +16,7 @@ pipeline {
         
         stage("Deploy") {
             steps {
-                echo "Hello Manu Jayansh
+                echo "Hello Manu Jayansh"
             }
                 
         }        
